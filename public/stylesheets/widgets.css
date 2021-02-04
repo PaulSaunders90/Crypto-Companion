@@ -1,0 +1,15 @@
+/* Price Marquee Widget */
+
+.cg-default, .cg-container{
+    font-family: 'Oswald', sans-serif !important;
+}
+
+/* Twitter Container*/
+
+#twitter{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 25px;
+    text-align: right;
+}
