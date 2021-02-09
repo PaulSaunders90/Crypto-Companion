@@ -16,25 +16,23 @@ fetch(req)
             oldContent = '';   
         for (i = 0; i < 4; i++) {
             if (i === 0) {
-                headlineContent += '<div id="topstory">'
+                headlineContent += '<div id="topstory" style="background-image: url(' + results.articles[i].urlToImage + '");>'
                 headlineContent += '<a href="'+ results.articles[i].url + '">'
-                headlineContent += '<div id="headlineimage" style="background-image: url(' + results.articles[i].urlToImage + '");>'
-                headlineContent += '</div>'
                 headlineContent += '<section><div id="headlinetitle">' + results.articles[i].title.substring(0,100) + '</div>'
                 headlineContent += '<p id="headlinedate">' + results.articles[i].publishedAt + '</p>'
-                headlineContent += '<p class="author">' + 'by: ' + results.articles[i].author + '</p></section>'
+                headlineContent += '<p id="headlineauthor">' + 'by: ' + results.articles[i].author + '</p></section>'
                 headlineContent += '</a>'
                 headlineContent += '</div>'
                 headlineNews.innerHTML += headlineContent
             } else {
-                oldContent += '<section class="olderstory">'
-                oldContent += '<div class="newsimage" style="background-image: url(' + results.articles[i].urlToImage + '");>'
-                oldContent += '</div>'
+                oldContent += '<div class="olderstory">'
                 oldContent += '<a href="' + results.articles[i].url + '">'
-                oldContent += '<section><span class="articletitle">' + results.articles[i].title.substring(0,100) + '</span>'
-                oldContent += '<p class="author">' + 'by: ' + results.articles[i].author + '</p></section>'
+                oldContent += '<div><div class="newsimage" style="background-image: url(' + results.articles[i].urlToImage + '");>'
+                oldContent += '</div>'
+                oldContent += '<span class="articletitle">' + results.articles[i].title.substring(0,100) + '</span>'
+                oldContent += '<p class="oldstoryauthor">' + 'by: ' + results.articles[i].author + '</p></div>'
                 oldContent += '</a>'
-                oldContent += '</section>'
+                oldContent += '</div>'
             }
         }
         oldNews.innerHTML += oldContent

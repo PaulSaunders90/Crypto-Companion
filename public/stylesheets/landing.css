@@ -23,25 +23,80 @@
 
 #headlinenews{
     width: calc(100% - 450px);
-    height: 500px;
+    height: 550px;
     background-color:#19284d;
+}
+
+#headlinenews:hover #topstory{
+    transform: scale(1.03);
+}
+
+#headlinetitle{
+    font-size: 32px;
+}
+
+#headlinetitle:hover{
+    text-decoration: underline;
+}
+
+#headlinedate{
+    font-size: 14px;
+}
+
+#topstory{
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform .2s;
     border-bottom-left-radius: 5px;
 }
 
-#headlinenews:hover #headlineimage{
-    transform: scale(1.03);
+#topstory a{
+    text-decoration: none;
+    color: #19284d;
+}
+
+#topstory section{
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    background-color: rgba(25, 40, 77, .6);
+    color: white;
+    width: calc(100% - 30px);
+}
+
+#headlineauthor{
+    color: #fcc117;
+    font-size: 22px;
 }
 
 #oldnews{
     width: 450px;
+    height: 530px;
     background-color:#19284d;
     border-bottom-right-radius: 5px;
+    padding: 10px;
+}
+
+#oldnewsheader{
+    color: #fcc117;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .olderstory{
-    display: flex;
-    margin: 10px;
-    padding: 10px;
+    width: 400px;
+    height: 125px;
+    margin: 5px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.olderstory section{
+    padding-left: 10px;
 }
 
 .olderstory:hover .articletitle{
@@ -52,50 +107,21 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#headlinenews a, #oldnews a{
+.newsimage{
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#oldnews a{
     text-decoration: none;
     color: white;
 }
 
-#headlineimage{
-    height: 350px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    transition: transform .2s;
-}
-
-.newsimage{
-    width: 100%;
-    height: 125px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.author{
+.oldstoryauthor{
     color: #fcc117;
-}
-
-#topstory section{
-    padding: 10px;
-}
-
-#headlinetitle{
-    font-size: 26px;
-}
-
-#headlinetitle:hover{
-    text-decoration: underline;
-}
-
-#headlinedate{
-    font-size: 12px;
-}
-
-.olderstory section{
-    padding-left: 10px;
-    text-overflow: ellipsis;
 }
 
 /* Focus Card Design */
