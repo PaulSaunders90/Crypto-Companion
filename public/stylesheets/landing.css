@@ -124,9 +124,23 @@
     color: #fcc117;
 }
 
+/* Research Section Design */
+
+#researchheader{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+#researchcontainer{
+    width: 100%;
+    display: flex;
+}
+
 /* Focus Card Design */
 
-#card {
+.card {
     box-sizing: border-box;
     outline: none;
     font-size: 16px;
@@ -137,10 +151,10 @@
     display: block;
     float: left;
     margin: auto;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
-#card a {
+.card a {
     text-decoration: none;
 }
 
@@ -190,11 +204,11 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#cotm1:hover .date {
+.card:hover .date {
     top: -59px;
 }
 
-#card a #cotm1 {
+.card a #cotm1 {
     background-image: url("/img/landing/link.png");
 }
 
@@ -222,15 +236,15 @@
     opacity: 1;
 }
 
-#cotm1 .date {
+.card .date {
     background-color: #0e1a40;
 }
 
-#cotm1:hover figcaption {
+.card:hover figcaption {
     transform: translateY(110%);
 }
 
-#cotm1 .date {
+.card .date {
     position: absolute;
     top: 0;
     left: 25px;
@@ -243,44 +257,44 @@
     transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-#cotm1 .date span {
+.card .date span {
     color: white;
     line-height: 1;
 }
 
-#cotm1 .date span:first-child {
+.card .date span:first-child {
     font-size: 14px;
     font-weight: 900;
 }
 
-#cotm1 .date span:last-child {
+.card .date span:last-child {
     font-size: 14px;
     font-weight: 400;
 }
 
-#cotm1 figcaption {
+.card figcaption {
     color: white;
     transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
     z-index: 1;
 }
 
-#cotm1 figcaption h4 {
+.card figcaption h4 {
     margin: 0 0 5px;
     font-size: 24px;
     line-height: 1.35;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
 }
 
-#cotm1 figcaption h4>span {
+.card figcaption h4>span {
     color: #fcc117;
 }
 
-#cotm1 figcaption p {
+.card figcaption p {
     margin: 0;
     line-height: 1.5;
 }
 
-#cotm1 figcaption {
+.card figcaption {
     background: rgba(0, 0, 0, 0.7);
     padding: 15px;
     border-radius: 10px;
@@ -332,17 +346,13 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#cotm2:hover .date {
-    top: -59px;
-}
-
-#card a #cotm2 {
+.card a #cotm2 {
     background-image: url("/img/landing/ftm.png");
 }
 
 #cotm2:hover:after {
     content: url("/img/landing/cotm2.PNG");
-    background-color: rgba(14, 26, 64, 1);
+    background-color: rgba(0, 0, 0, 1);
     color: white;
     font-size: 72px;
     z-index: 2;
@@ -351,81 +361,17 @@
 #cotm2::after {
     content: '';
     content: url("/img/landing/cotm2.PNG");
-    background-color: rgba(14, 26, 64, 1);
+    background-color: rgba(0, 0, 0, 1);
     opacity: 0;
 }
 
 #cotm2:hover::after {
     content: url("/img/landing/cotm2.PNG");
-    background-color: rgba(14, 26, 64, 1);
+    background-color: rgba(0, 0, 0, 1);
     color: white;
     font-size: 72px;
     z-index: 2;
     opacity: 1;
-}
-
-#cotm2 .date {
-    background-color: #0e1a40;
-}
-
-#cotm2:hover figcaption {
-    transform: translateY(110%);
-}
-
-#cotm2 .date {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
-    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-#cotm2 .date span {
-    color: white;
-    line-height: 1;
-}
-
-#cotm2 .date span:first-child {
-    font-size: 14px;
-    font-weight: 900;
-}
-
-#cotm2 .date span:last-child {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-#cotm2 figcaption {
-    color: white;
-    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-    z-index: 1;
-}
-
-#cotm2 figcaption h4 {
-    margin: 0 0 5px;
-    font-size: 24px;
-    line-height: 1.35;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
-}
-
-#cotm2 figcaption h4>span {
-    color: #fcc117;
-}
-
-#cotm2 figcaption p {
-    margin: 0;
-    line-height: 1.5;
-}
-
-#cotm2 figcaption {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 10px;
 }
 
 #cotm3 {
@@ -474,17 +420,13 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#cotm3:hover .date {
-    top: -59px;
-}
-
-#card a #cotm3 {
+.card a #cotm3 {
     background-image: url("/img/landing/rsr.png");
 }
 
 #cotm3:hover:after {
     content: url("/img/landing/cotm3.PNG");
-    background-color: rgba(14, 26, 64, 1);
+    background-color: rgba(0, 0, 0, 1);
     color: white;
     font-size: 72px;
     z-index: 2;
@@ -493,79 +435,15 @@
 #cotm3::after {
     content: '';
     content: url("/img/landing/cotm3.PNG");
-    background-color: rgba(14, 26, 64, 1);
+    background-color: rgba(0, 0, 0, 1);
     opacity: 0;
 }
 
 #cotm3:hover::after {
     content: url("/img/landing/cotm3.PNG");
-    background-color: rgba(14, 26, 64, 1);
+    background-color: rgba(0, 0, 0, 1);
     color: white;
     font-size: 72px;
     z-index: 2;
     opacity: 1;
-}
-
-#cotm3 .date {
-    background-color: #0e1a40;
-}
-
-#cotm3:hover figcaption {
-    transform: translateY(110%);
-}
-
-#cotm3 .date {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
-    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-#cotm3 .date span {
-    color: white;
-    line-height: 1;
-}
-
-#cotm3 .date span:first-child {
-    font-size: 14px;
-    font-weight: 900;
-}
-
-#cotm3 .date span:last-child {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-#cotm3 figcaption {
-    color: white;
-    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-    z-index: 1;
-}
-
-#cotm3 figcaption h4 {
-    margin: 0 0 5px;
-    font-size: 24px;
-    line-height: 1.35;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
-}
-
-#cotm3 figcaption h4>span {
-    color: #fcc117;
-}
-
-#cotm3 figcaption p {
-    margin: 0;
-    line-height: 1.5;
-}
-
-#cotm3 figcaption {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 10px;
 }
